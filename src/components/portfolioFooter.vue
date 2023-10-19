@@ -1,20 +1,20 @@
 <template>
-  <div class="portfolioHeader">
-    <span>wow a portfolioHeader component</span>
+  <div class="portfolioFooter">
+    <span>wow a portfolioFooter component</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'portfolioHeader',
+  name: 'portfolioFooter',
   props: {},
 };
 </script>
 
 <style scoped>
-.portfolioHeader {
+.portfolioFooter {
+  display: flex;
   width: auto;
   overflow: hidden;
-  display: flex;
 }
 </style>

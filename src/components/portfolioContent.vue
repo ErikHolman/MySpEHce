@@ -1,6 +1,6 @@
 <template>
   <div class="portfolioContent">
-    <span>wow a portfolioContent component</span>
+    <span></span>
   </div>
 </template>
 
@@ -13,7 +13,9 @@ export default {
 
 <style scoped>
 .portfolioContent {
+  display: flex;
   width: auto;
-  border: 1px solid red;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 </style>
