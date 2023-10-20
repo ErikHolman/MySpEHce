@@ -1,17 +1,17 @@
 <template>
-  <ehLoader :showLoader="True" />
+  <!-- <ehLoader /> -->
   <LandingPage />
 </template>
 
 <script>
-import EhLoader from './components/ehLoader.vue';
+// import EhLoader from './components/ehLoader.vue';
 import LandingPage from './views/LandingPage';
 
 export default {
   name: 'App',
   components: {
     LandingPage,
-    EhLoader,
+    // EhLoader,
   },
 };
 </script>
