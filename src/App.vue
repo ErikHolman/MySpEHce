@@ -41,8 +41,6 @@ body {
 .ehLoader {
   display: unset;
   position: relative;
-  top: 50%;
-  left: 50%;
   transition: all 10s;
 }
 
