@@ -2,22 +2,29 @@
   <div class="portfolioContent">
     <span class="titleName">Erik Holman</span>
     <div class="timeline">
-      <div class="lines">&nbsp;</div>
+      <div class="lines">
+        <profilePics url="../assets/profile.jpg" />
+      </div>
       <div class="content">
         <div class="entry">
           <h3>Birth</h3>
-          <span>Somewhere in the PNW, sometime in the later 1900s</span>
+          <span>Somewhere in the PNW in the later 1900s</span>
         </div>
         <div class="entry">
           <h3>College</h3>
-          <span
-            >Somewhere in the Phoenix Valley, sometime in the 20-oughts</span
-          >
+          <span>Valley of the Sun sometime in the 20-oughts</span>
+          <span>HIDDEN: 33.41638409460698, -111.9615222176947</span>
         </div>
         <div class="entry">
           <h3>MediaPRO</h3>
           <span>A clever blurb about the time at MediaPRO</span>
-          <blockquote>a quote</blockquote>
+          <blockquote>
+            a quote a quote a quote a quote a quote a quote a quote a quote a
+            quote a quote a quote a quote a quote a quote a quote a quote a
+            quote a quote a quote a quote a quote a quote a quote a quote a
+            quote a quote a quote a quote a quote a quote a quote a quote a
+            quote a quote a quote a quote a quote
+          </blockquote>
         </div>
         <div class="entry">
           <h3>KnowBe4</h3>
@@ -26,7 +33,7 @@
         </div>
         <div class="entry">
           <h3>8Months, 17Days</h3>
-          <span>A clever blurb about the time at MediaPRO</span>
+          <span>A clever blurb about the time spent unemployed</span>
           <blockquote>a quote</blockquote>
         </div>
       </div>
@@ -35,7 +42,9 @@
 </template>
 
 <script>
+import profilePics from './profilePics.vue';
 export default {
+  components: { profilePics },
   name: 'portfolioContent',
   props: {},
 };
@@ -58,6 +67,7 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .lines {
@@ -69,10 +79,10 @@ export default {
   border-left: 0;
   border-color: white;
   border-style: solid;
-  height: auto;
-  width: 20px;
+  height: 80vh;
+  width: 50vw;
   justify-content: stretch;
-  align-self: stretch;
+  align-items: stretch;
 }
 
 .content {
@@ -90,7 +100,14 @@ export default {
 }
 
 .entry {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+}
+.entry::before {
+  content: '*';
+  position: relative;
+  top: 8px;
+  left: -14px;
+  transform: scale(2em);
 }
 
 .entry h3 {
@@ -99,8 +116,16 @@ export default {
   border-left: 1px soild white;
 }
 
+.entry blockquote {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 2px solid rgba(0, 0, 0, 0.9);
+  width: 390px;
+}
+
 .titleName {
-  font-size: 10em;
+  font-size: 3em;
   font-family: 'tilt neon';
 }
 </style>
