@@ -79,7 +79,6 @@ export default {
   border-left: 0;
   border-color: white;
   border-style: solid;
-  height: 80vh;
   width: 50vw;
   justify-content: stretch;
   align-items: stretch;

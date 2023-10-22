@@ -25,6 +25,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  align-content: space-between;
   padding: 0;
   margin: auto;
   overflow: hidden;
@@ -36,6 +37,7 @@ body {
 
 .portfoliofooter {
   flex-shrink: 0;
+  height: 150px;
 }
 
 .ehLoader {
