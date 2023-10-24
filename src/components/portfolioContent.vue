@@ -2,9 +2,10 @@
   <div class="portfolioContent">
     <span class="titleName">Erik Holman</span>
     <div class="timeline">
-      <div class="lines">
+      <div class="left">
         <profilePics url="../assets/profile.jpg" />
       </div>
+      <div class="lines">&nbsp;</div>
       <div class="content">
         <div class="entry">
           <h3>Birth</h3>
@@ -70,18 +71,22 @@ export default {
   height: auto;
 }
 
-.lines {
+.left {
   display: flex;
   flex-direction: column;
-  border-top: 0;
-  border-right: 1px;
-  border-bottom: 0;
-  border-left: 0;
-  border-color: white;
-  border-style: solid;
   width: 50vw;
   justify-content: stretch;
   align-items: stretch;
+}
+
+.lines {
+  display: flex;
+  width: 3px;
+  height: 75vh;
+  background-color: white;
+  align-content: stretch;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -102,17 +107,25 @@ export default {
   padding-bottom: 15px;
 }
 .entry::before {
-  content: '*';
+  content: '';
+  display: inline-block;
   position: relative;
-  top: 8px;
-  left: -14px;
-  transform: scale(2em);
+  height: 10px;
+  width: 10px;
+  border-radius: 15%;
+  rotate: 45deg;
+  top: 10px;
+  left: -23px;
+  font-size: 2em;
+  border: 3px solid darkgray;
+  background-color: white;
+  box-shadow: 2px -2px white;
 }
 
 .entry h3 {
   text-decoration: overline;
   text-decoration-color: white;
-  border-left: 1px soild white;
+  text-decoration-thickness: 3px;
 }
 
 .entry blockquote {
