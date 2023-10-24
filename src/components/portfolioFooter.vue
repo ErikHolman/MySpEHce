@@ -34,6 +34,7 @@ export default {
   border: 2px solid red;
   padding: 0;
   margin: 0;
+  width: 100px;
 }
 
 .portfolioFooter li:hover {
